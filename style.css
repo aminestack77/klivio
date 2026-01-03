@@ -6,13 +6,28 @@
         url(Assets/Fonts/static/Montserrat-ExtraBold.ttf)
 }
 
+.body {
+    overflow-x: hidden;
+}
+
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+}
+
 strong {
     font-family: "Montserrat";
     font-weight: extra-bold;
 }
 
-html,
-body {}
 
 * {
     margin: 0;
@@ -32,7 +47,7 @@ body {}
     position: relative;
     font-size: 0.9375rem;
     width: 105rem;
-    height: 5rem;
+
 }
 
 .parrent-nav-top img {
@@ -57,6 +72,7 @@ body {}
     display: flex;
     list-style: none;
     gap: 1.25rem;
+
 
 }
 
@@ -124,52 +140,52 @@ body {}
     position: relative;
 }
 
-.bannierecontent {
+.banniere {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bannierecontent h1 {
+.banniere h1 {
     font-size: 3rem;
     font-weight: 800;
     color: #152237;
     text-transform: uppercase;
-    position: absolute;
-    top: 9.063rem;
-    left: 20.563rem;
+    margin-bottom: 5px;
+
 
 
 }
 
-.bannierecontent p {
+.esp {
+    width: 130px;
+    white-space: pre;
+    margin-top: 31px;
+    border-radius: 0.375rem;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: white solid 2px;
+    font-size: 15px;
+}
+
+.banniere p {
     text-align: center;
     font-size: 1.25rem;
     font-weight: 500;
     text-transform: uppercase;
-    position: absolute;
-    top: 13.5rem;
-    left: 30.25rem;
+
 }
 
-.bannierecontent button {
-    position: absolute;
-    left: 48.438rem;
-    top: 16.375rem;
-    border-radius: 0.375rem;
-    padding: 0.625rem;
-    background-color: white;
-    color: black;
-    border: white solid 2px;
-}
 
 /*les fomrations populaires*/
 .LFP {
     display: flex;
-    padding-bottom: 6.25rem;
-    justify-content: space-between;
-    flex-direction: row;
+    align-content: center;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-direction: column;
     width: 105rem;
     height: 39.5rem;
 }
@@ -177,7 +193,7 @@ body {}
 .LFP h2 {
     font-weight: 800;
     font-size: 2.25rem;
-    margin-left:6.875rem;
+    margin-left: 6.875rem;
     margin-top: 3.188rem;
     margin-bottom: 3.563rem;
 
@@ -185,25 +201,19 @@ body {}
 
 .Cartes-contenaires {
     display: flex;
-    align-items: flex-start;
     justify-content: space-around;
-    position: relative;
+    margin-left: 4.15rem;
 }
 
 .Carte1 {
-    margin-left: 6.5rem;
-    margin-right: 5.75rem;
-
-
+    position: relative;
 }
 
 .Carte2 {
-    margin-right: 4.75rem;
-
+    position: relative;
 }
 
 .Carte3 {
-    margin-right: 5.688rem;
     position: relative;
 
 }
@@ -219,11 +229,10 @@ body {}
     background-color: #152237;
     color: white;
     position: absolute;
-    left: 19.5rem;
-    bottom: 8.188rem;
-    padding: 0.125rem;
-    padding-left: 0.313rem;
+    left: 13.5rem;
+    bottom: 8rem;
     font-weight: 100;
+
 }
 
 .prix1 h3 s {
@@ -248,7 +257,6 @@ body {}
 .Carte1 p {
     font-size: small;
     font-weight: normal;
-    padding-left: 0.055rem;
     white-space: pre-line;
     margin-left: 0.813rem;
 }
@@ -263,10 +271,8 @@ body {}
     background-color: #152237;
     color: white;
     position: absolute;
-    left: 44.5rem;
-    bottom: 8.063rem;
-    padding: 0.125rem;
-    padding-left: 0.313rem;
+    left: 13.5rem;
+    bottom: 8rem;
     font-weight: 100;
 }
 
@@ -275,7 +281,7 @@ body {}
     font-size: xx-small;
     text-align: center;
     color: white;
-    margin-left: 0.813rem;
+
 }
 
 .Carte2 h4 {
@@ -357,7 +363,7 @@ body {}
 }
 
 .prix4 {
-    border-radius:62.438rem;
+    border-radius: 62.438rem;
     border: #152237 solid 2px;
     background-color: #152237;
     color: white;
@@ -381,27 +387,30 @@ body {}
 }
 
 .LFP button {
-    align-items: center;
-    justify-content: center;
+    white-space: pre;
     border-radius: 0.375rem;
     background-color: #152237;
     color: white;
-    position: absolute;
-    left: 49.375rem;
-    margin-top: 2.375rem;
-    margin-bottom: 2.938rem;
-    padding: 0.5rem 0.625rem;
+    width: 14.063rem;
+    height: 2.5rem;
     border: solid 1px #152237;
+    align-items: center;
+    margin-left: 43%;
+    margin-bottom: 1.563rem;
+    ;
 }
 
 /*Les foramtions récentes*/
 
 .LFR {
     display: flex;
-    padding-bottom: 6.25rem;
-    background-color: #152237;
+    align-content: center;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-direction: column;
     width: 105rem;
     height: 39.5rem;
+    background-color: #152237;
 }
 
 .LFR section {
@@ -582,7 +591,7 @@ body {}
 }
 
 .LFR button {
-    border-radius:0.375rem;
+    border-radius: 0.375rem;
     background-color: white;
     color: #152237;
     margin-left: 45.438rem;
@@ -601,7 +610,8 @@ body {}
     height: 37.313rem;
 
 }
-.Avis section{
+
+.Avis section {
     display: flex;
 
 }
@@ -616,7 +626,7 @@ body {}
     justify-self: center;
     font-weight: 900;
     font-size: 2.75rem;
-    margin-bottom:4.375rem;
+    margin-bottom: 4.375rem;
     margin-top: 3.625rem;
     margin-left: 3.75rem;
     color: #152237;
@@ -629,9 +639,6 @@ body {}
     margin-left: 9.375rem;
     margin-right: 1.5rem;
     padding-bottom: 9.375rem;
-}
-
-.Camille {   
 }
 
 .pp {
@@ -729,6 +736,7 @@ body {}
     margin-bottom: 4.75rem;
     margin-right: 4.875rem;
 
+
 }
 
 .cvf {
@@ -736,9 +744,16 @@ body {}
     font-weight: 900;
     font-size: 2.5rem;
     margin-top: 4.75rem;
-    margin-bottom: 3.063rem;
+
     white-space: pre-line;
 
+}
+
+.cache {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 3.063rem;
 }
 
 /*ici*/
@@ -748,6 +763,7 @@ body {}
     display: flex;
     width: 1.875rem;
     height: 1.875rem;
+    flex-direction:column;
 }
 
 .cf1 p {
@@ -885,7 +901,7 @@ body {}
 .Nom {
     margin-left: 10.625rem;
     color: white;
-    margin-right:8.625rem;
+    margin-right: 8.625rem;
     width: 37.438rem;
     height: 2.828rem;
     margin-bottom: 3.375rem;
@@ -900,8 +916,8 @@ body {}
 
 .names::placeholder {
     color: white;
-    padding-left:0.75rem;
-    padding-bottom:0.625rem;
+    padding-left: 0.75rem;
+    padding-bottom: 0.625rem;
 }
 
 .email {
@@ -919,7 +935,7 @@ body {}
 
 .email::placeholder {
     color: white;
-    padding-left:0.75rem;
+    padding-left: 0.75rem;
     padding-bottom: 0.625rem;
 }
 
@@ -941,9 +957,9 @@ body {}
 
 .message::placeholder {
     color: white;
-    padding-left:0.75rem;
-    padding-bottom:0.625rem;
-    padding-top:0.625rem;
+    padding-left: 0.75rem;
+    padding-bottom: 0.625rem;
+    padding-top: 0.625rem;
 
 }
 
@@ -957,16 +973,16 @@ body {}
     cursor: pointer;
     font-weight: 500;
     text-align: center;
-    padding:0.939rem 9.375rem;
-    margin-top:3.375rem;
+    padding: 0.939rem 9.375rem;
+    margin-top: 3.375rem;
     margin-left: 40%;
     margin-bottom: 4.813rem;
 
 }
 
 .rectangle {
-    width:105rem;
-    height:1.125rem;
+    width: 105rem;
+    height: 1.125rem;
     background: linear-gradient(to left, #44DD8A, #18a0fb);
 }
 
@@ -980,18 +996,18 @@ body {}
 }
 
 .imlogo {
-    width:15.188rem;
+    width: 15.188rem;
     height: 5.438rem;
     margin-top: 5.688rem;
     margin-left: 5.688rem;
-    margin-right:12.5rem;
+    margin-right: 12.5rem;
     margin-bottom: 6rem;
-   
+
 }
 
 .Mls {
     display: flex;
-     margin-right:1.125rem;
+    margin-right: 1.125rem;
     flex-direction: column;
 }
 
@@ -1008,8 +1024,8 @@ body {}
 
 .MLL {
     color: white;
-    padding-bottom:0.75rem;
-   
+    padding-bottom: 0.75rem;
+
 }
 
 .Coo h4 {
@@ -1021,34 +1037,34 @@ body {}
 
 .address {
     color: white;
-    padding-bottom:0.438rem;
+    padding-bottom: 0.438rem;
 }
 
 .sadress {
     color: white;
-    padding-bottom:0.438rem;
+    padding-bottom: 0.438rem;
 }
 
 .address img {
-    padding-right:1.25rem;
+    padding-right: 1.25rem;
 }
 
 .tel {
     color: white;
-    padding-bottom:1.375rem;
+    padding-bottom: 1.375rem;
 }
 
 .tel img {
-    padding-right:1.25rem;
+    padding-right: 1.25rem;
 }
 
 .mail2 {
     color: white;
-    padding-bottom:0.438rem;
+    padding-bottom: 0.438rem;
 }
 
 .mail2 img {
-    padding-right:1.20rem;
+    padding-right: 1.20rem;
 }
 
 .sadress2 {
@@ -1058,19 +1074,19 @@ body {}
 }
 
 .coin {
-margin-top: 6.375rem;
+    margin-top: 6.375rem;
 }
 
 .Connexion {
     background-color: white;
-    border-radius:0.375rem;
+    border-radius: 0.375rem;
     color: #152237;
     padding: 1rem 1.688rem;
 
-    
+
     text-align: center;
-    margin-bottom:0.625rem;
-    margin-right:6.375rem;
+    margin-bottom: 0.625rem;
+    margin-right: 6.375rem;
 }
 
 .Inscription {
@@ -1079,21 +1095,23 @@ margin-top: 6.375rem;
     color: #152237;
     padding: 1rem 1.688rem;
     text-align: center;
-    margin-bottom:0.625rem;
+    margin-bottom: 0.625rem;
     margin-right: 6.375rem
 }
 
 .hr2 {
     border: solid 2px #44DD8A;
     width: 92.625rem;
-    margin-left:6rem;
+    margin-left: 6rem;
     background-color: #152237;
 }
-.partie1{
+
+.partie1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 .Rsx {
     display: flex;
     flex-direction: row;
@@ -1106,14 +1124,14 @@ margin-top: 6.375rem;
     margin-right: auto;
     color: white;
     margin-left: 6rem;
-    margin-top:1.688rem;
+    margin-top: 1.688rem;
 }
 
 .Svn {
     color: white;
     margin-top: 2.188rem;
     margin-right: 1.875rem;
-  
+
 }
 
 .Fb {
@@ -1133,9 +1151,485 @@ margin-top: 6.375rem;
 
 .Lkn {
     margin-top: 1.875rem;
-    margin-right:6.313rem;
+    margin-right: 6.313rem;
 }
-.SN{
+
+.SN {
     display: flex;
     flex-direction: row;
+}
+
+@media(max-width: 393px) {
+
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Navigation */
+    .parrent-nav-top {
+        width: 100%;
+        height: 80px;
+        padding: 0 20px;
+        justify-content: space-between;
+    }
+
+    .parrent-nav-top img {
+        width: 70px;
+        height: 26px;
+        margin-left: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        margin-right: 0;
+    }
+
+    .conteneur-recherche,
+    .formation-link,
+    .nav-list {
+        display: none;
+    }
+
+    .gauche-container {
+        gap: 20px;
+    }
+
+    /* Bannière */
+    .banniere {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banniere h1 {
+        font-size: 28px;
+        white-space: normal;
+        line-height: 1.2;
+    }
+
+    .banniere p {
+        font-size: 16px;
+        white-space: normal;
+        margin: 15px 0;
+    }
+
+    .esp {
+        width: 140px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Formations Populaires */
+    .LFP {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .LFP h2 {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    .Cartes-contenaires {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .Carte1,
+    .Carte2,
+    .Carte3,
+    .Carte4 {
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .Carte1 img,
+    .Carte2 img,
+    .Carte3 img,
+    .Carte4 img {
+        margin-left: 0;
+
+    }
+
+    .etoiles {
+        width: 116px;
+        height: 19.2px;
+    }
+
+    .prix1,
+    .prix2,
+    .prix3,
+    .prix4 {
+        left: auto;
+        right: 20px;
+        bottom: 130px;
+    }
+
+    .Carte1 h4,
+    .Carte2 h4,
+    .Carte3 h4,
+    .Carte4 h4 {
+        margin-left: 10px;
+        font-size: 18px;
+    }
+
+    .Carte1 p,
+    .Carte2 p,
+    .Carte3 p,
+    .Carte4 p {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    .Carte1 a,
+    .Carte2 a,
+    .Carte3 a,
+    .Carte4 a {
+        margin-left: 10px;
+    }
+
+    .LFP button {
+        width: 90%;
+        max-width: 250px;
+        margin: 30px auto;
+        display: block;
+    }
+
+    /* Formations Récentes */
+    .LFR {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .LFR h2 {
+        font-size: 24px;
+        margin: 20px auto;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    .Cartes-contenaires2 {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .Carte5,
+    .Carte6,
+    .Carte7,
+    .Carte8 {
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .etoiles2 {
+        margin-left: 10px;
+    }
+
+    .prix5,
+    .prix6,
+    .prix7,
+    .prix8 {
+        left: auto;
+        right: 20px;
+        top: 180px;
+    }
+
+    .LFR button {
+        width: 90%;
+        max-width: 250px;
+        margin: 30px auto;
+        display: block;
+    }
+
+    /* Avis */
+    .Avis {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .avh2 {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .Avis section {
+        flex-direction: column;
+    }
+
+    .eto {
+        margin-left: 28%;
+    }
+
+    .Juliette,
+    .Camille {
+        margin: 0 20px;
+    }
+
+    .Nomavis {
+        margin-left: 30%;
+    }
+
+    .pp {
+        width: 139px;
+        height: 139px;
+        margin-left: 25%;
+    }
+
+    /* Avantages */
+    .Avantages {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .Avantages h1 {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .a1 {
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .a1 img {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .Avantages p {
+        font-size: 14px;
+        margin-right: 0;
+        white-space: normal;
+    }
+
+    .a2 {
+        width: 327px;
+        height: 244px;
+        margin: 20px 0;
+    }
+
+    /* Création formations */
+    .Creform {
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 20px;
+        display: flex;
+    }
+   
+
+    .img1 {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        
+    }
+
+    .cvf {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+        white-space: pre-line;
+    }
+    .cache{
+        visibility: hidden;
+    }
+    .cf1,
+    .cf2 {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .cf1 img,
+    .cf2 img {
+        margin-right: 15px;
+        
+    }
+
+    .cf1 p,
+    .cf2 p {
+        font-size: 14px;
+        margin-right: 0;
+        white-space: normal;
+    }
+
+    /* À propos */
+    .Propos {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .Propos section {
+        padding: 20px;
+    }
+
+    .Propos h2 {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .pg1,
+    .pg2 {
+        font-size: 14px;
+        margin: 15px 0;
+        white-space: normal;
+    }
+
+    .logo {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo img {
+        margin: 0;
+        width: 214px;
+        height: 77px;
+    }
+
+    /* Contact */
+    .Contact {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .Contact h2 {
+        font-size: 24px;
+        margin: 20px 0;
+        text-align: center;
+        white-space: normal;
+    }
+
+    .Contact hr {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .Contact section {
+        flex-direction: column;
+    }
+
+    .Nom,
+    .email {
+        margin: 0 0 20px 0;
+        width: 100%;
+    }
+
+    .Nom input,
+    .email input {
+        width: 100%;
+    }
+
+    .message textarea {
+        width: 100%;
+        margin: 0;
+        min-height: 150px;
+    }
+
+    .btn {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+        display: block;
+    }
+
+    /* Footer */
+    .rectangle {
+        width: 100%;
+        background: #44DD8A;
+    }
+
+    .Footer {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .partie1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .imlogo {
+        width: 100px;
+        height: auto;
+        margin: 20px auto;
+    }
+    .imlogo img{
+        width: 243px;
+        height: 87px;
+        margin-left:-60px;
+;
+    }
+    .Mls,
+    .Coo {
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+
+    .Mls h4,
+    .Coo h4 {
+        padding-top: 20px;
+    }
+
+    .coin {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .Connexion,
+    .Inscription {
+        display:none;
+    }
+
+    .hr2 {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .Rsx {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .K2025 {
+        display: none;
+    
+    }
+.partie2{
+    display: none;
+}
+
 }
